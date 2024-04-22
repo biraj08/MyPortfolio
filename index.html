@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Screenshot 2024-04-16 163028.png" class="logo">
+                <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Expertise</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark tch" onclick="closemenu()"></i>  <!--for mobile-->
+                </ul>
+                <i class="fa-solid fa-bars tch" onclick="openmenu()"></i>    <!--for mobile-->
+            </nav>
+
+            <div class="header-text">
+                <h6>✨✨✨</h6>
+                <h2><span class="auto-input"></span></h2>
+                <p class="p1">Hey👋, I'm <span>Biraj Kuwar,</span> a passionet Front-end Developer<br> with a keen eye for clean and efficient code...</p>
+
+                <a href="#contact" class="bt1">Contact Me</a>
+                <a href="My_Resume.pdf" class="bt2" download="">Download CV</a>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- -----------------------------about------------------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+     
+            <div class="about-col-2">
+                <h2 class="subtitle">About Me</h2>
+                <p>Web developer with expertise in front-end development. Proficient in HTML, CSS, and JavaScript, with a keen understanding of UI/UX design principles. Showcase projects demonstrating coding skills and contributions to user-friendly interfaces.Scroll below and see my projects...</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <!-- <p class="tab-links"  onclick="opentab('Experiences')">Experiences</p> -->
+                    <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web development</span> <br> Keen knowledge of Front end Development.</li>
+                        <li><span>UI / UX </span><br> Designing web app and interface.</li>
+                        <li><span>Graphic Designer</span><br> I am designed some album using photoshop software.</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="tab-contents" id="Experiences">
+                    <ul>
+                        <li><span>2024-current </span><br> Designing web app and interface</li>
+                        <li><span>2020-2023</span> <br> Graphic designer at microsoft</li>
+                        <li><span>2018-2020</span><br> Designing ios & android application</li>
+                    </ul>
+                </div> -->
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024-current </span><br> Bca 2nd year at Sarala Birla University</li>
+                        <li><span>2020-2022</span> <br> YSSK Vidyapith Lakhanpur</li>
+                        <li><span>2014-2019</span><br> Tunturi H.S School</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-col-1">
+                <img src="Html & Css_page-0001.jpg" alt="My pic" id="about-image">
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<!-- ----------------------------services--------------------------------->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Expertise</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I am a developer with keen knowldge of front-end.</p>
+                <a href="#about">About Me</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-mobile"></i>
+                <i class="fa-brands fa-android"></i>
+                <h2>Ui / Ux Design</h2>
+                <p>Hello I am a web developer & ui / ux desighner.</p>
+                <a href="#about">About Me</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Graphic Design</h2>
+                <p>I am designed some album using photoshop software.</p>
+                <a href="#about">About Me</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------portfolio--------------------------->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h2 class="subtitle">My Project</h2>
+        <h4>Hover the below image & click to see my project...⤵️</h4>
+        <div class="worklist">
+            <div class="work">
+                <img src="Screenshot 2024-04-13 190537.png" alt="">
+                <div class="layer">
+                    <h5>Click the given link🔗</h5>
+                    <a href="https://biraj08.github.io/Text-To-Speech-Converter/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2024-04-14 100934.png" alt="">
+                <div class="layer">
+                    <h5>Click the given link🔗</h5>
+                    <a href="https://biraj08.github.io/Age-Calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2024-04-14 102921.png" alt="">
+                <div class="layer">
+                    <h5>Click the given link🔗</h5>
+                    <a href="https://biraj08.github.io/Form-Validition/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2024-04-14 155823.png" alt="">
+                <div class="layer">
+                    <h5>Click the given link🔗</h5>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2024-04-14 160016.png" alt="">
+                <div class="layer">
+                    <h5>Click the given link🔗</h5>
+                    <a href="https://biraj08.github.io/Music-Player/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="Screenshot 2024-04-14 163512.png" alt="">
+                <div class="layer">
+                    <h5>Click the given link🔗</h5>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------------contact-------------------------- -->
+
+<div id="contact">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-brands fa-telegram"></i><a href="mailto:birajkuwar6@gmail.com">birajkuwar6@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone" id="num"></i>+91-9749547339</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-twitter-square" id="i1"></i></a>
+                        <a href="https://www.instagram.com/biraj.kuwar/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/biraj-kuwar/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/biraj08"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="My_Resume.pdf" class="btn" download="">Download CV</a>
+    
+                </div>
+    
+                <div class="contact-right">
+                    <form>
+                        <input type="hidden" name="access_key" value="61364865-be4e-4351-9cd4-17f51a5b3db8">
+                        <input type="text" Name="Name" placeholder="Your Name" required>
+                        <input type="email" Name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2" >Submit</button>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<footer class="f1">
+    <h4>Thank You ❤️</h4>
+</footer>
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
